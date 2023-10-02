@@ -20,6 +20,8 @@
     <!-- Main Stylesheet -->
     <link rel="stylesheet" href="/assets/style.css" />
     <link rel="stylesheet" href="/style.css" />
+
+    <script  defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
 
   <body>
@@ -54,20 +56,27 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="projects.html">projects</a>
-            </li>
-           
+            </li>          
           </ul>
         </div>
       </div>
     </nav>
-    <!--hero banner-->
+
+
+  
     <div class="hero-banner">
       <div class="hero-text">
-        <h1>Jevaughn Tyndale</h1>
-        <h3>Motivated Computer Science Student</h3>
+        <h1>WE WORK HARD, WE PLAY HARD</h1>
+        <h3>workholic</h3>
       </div>
       <img src="assets/images/IMG_1.jpg" class="image" id="myImage" />
+      <!-- 
+      <img src = "" class="image" id="myImage" />
+      --?>
     </div>
+    
+
+
     <!--fotter-->
     <div class="footer">
       <div class="social-icon">
@@ -95,5 +104,16 @@
       crossorigin="anonymous"
     ></script>
     <script src="assets/main.js"></script>
+    <script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
   </body>
 </html>

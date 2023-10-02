@@ -1,0 +1,15 @@
+{% extends "../../base.njk" %}
+
+   <!--hero banner-->
+   {% block content %}
+    <div class="hero-banner">
+      <div class="hero-text">
+        <h1>{{hero.title}}</h1>
+        <h3>{{hero.subTitle}}</h3>
+      </div>
+      <img src="assets/images/IMG_1.jpg" class="image" id="myImage" />
+      <!-- 
+      <img src = "{{images[count_index]}}" class="image" id="myImage" />
+      --?>
+    </div>
+    {% endblock %}
