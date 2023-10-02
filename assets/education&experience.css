@@ -1,0 +1,196 @@
+body {
+  background-color: black;
+}
+.navbar-custom {
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.288);
+}
+.main-content {
+  background-color: black;
+}
+
+p {
+  color: #b6babf;
+}
+
+.main-content {
+  display: flex;
+  max-width: 1320px;
+  margin: auto;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
+.education,
+.experience {
+  background: #171717;
+  padding: 2rem 17rem 5rem;
+  border-radius: 10px;
+  width:1000px;
+}
+.education {
+  margin-top: 4rem;
+}
+.education h2{
+  color: white!important;
+ 
+  font-size: 1.5rem !important;
+}
+.experience {
+  margin-bottom: 7rem;
+  margin-top: 2rem;
+}
+.experience li{
+  list-style-type: circle!important;
+}
+.experience ul{
+  padding-left:1rem;
+}
+.experience h2{
+  line-height: 3.5rem;
+ 
+} 
+
+
+.experience ul{
+  padding-top:1.5rem;
+}
+.experience ul li{
+  padding-bottom:1.2rem;
+}
+.institution_logo img {
+  width: 80px;
+  height: 80px;
+}
+
+.institution_logo {
+  margin-top: 3rem !important;
+}
+
+.education,
+.experience ul li {
+  color: white;
+  font-size: 18px;
+}
+
+.experience li {
+  color: white;
+  font-size: 18px;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  position: relative;
+  margin-top: 0.5rem;
+}
+
+h1:before {
+  content: "";
+  position: absolute;
+  width: 3rem;
+  height: 1px;
+  background-color: white;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+h2 {
+  color: white;
+  font-size: 25px;
+  font-weight: 500px;
+  line-height: 30px;
+  padding-top: 1rem;
+}
+
+h3 {
+  color: #a8a8a8;
+  font-size: 16px;
+  font-weight: 500px;
+  line-height: 21px;
+}
+
+h4 {
+  color: #a8a8a8;
+  font-size: 16px;
+  font-weight: 500px;
+  line-height: 9px;
+}
+
+h5 {
+  color: #a8a8a8;
+  font-size: 16px;
+  font-weight: 500px;
+}
+
+p {
+  color: #a8a8a8;
+  font-size: 14px;
+  font-weight: 400px;
+  line-height: 21px;
+  margin-top: 1rem;
+}
+
+.image-er {
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+/*cv*/
+.cv {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.cv button {
+  border: 1px solid rgba(255, 255, 255, 0.288);
+  background-color: transparent;
+  padding: 1rem 13rem;
+  color: white;
+}
+
+.cv button a {
+  font-size: 18px;
+}
+
+/*education*/
+
+span {
+  color: white !important;
+  font-weight: 400 !important;
+}
+
+@media only screen and (max-width: 792px) {
+  .education,
+  .experience{
+    padding-right:2rem !important;
+    padding-left:2rem !important;
+  }
+
+  .experience{
+    margin-bottom: 2rem;
+  }
+.experience li{
+  font-size: 1rem !important;
+  line-height: 2rem !important;
+}
+  .education h2{
+    font-size: 1.2rem !important;
+
+  }
+
+  .experience h2, h5{
+    font-size: 1.2rem !important;
+   
+  }
+  .experience h2{
+      line-height:2rem !important;
+  }
+}
+
+
+

@@ -1,0 +1,111 @@
+body {
+  background-color: black;
+}
+
+.main-content {
+  background-color: black;
+}
+
+p {
+  color: #b6babf;
+}
+
+.main-content {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  position: relative;
+  margin-top: 0.5rem;
+}
+
+h2 {
+  color: #b6babf;
+  font-size: 25px;
+  font-weight: 500px;
+  line-height: 30px;
+  padding-top: 1rem;
+}
+
+h3 {
+  color: #a8a8a8;
+  font-size: 16px;
+  font-weight: 500px;
+  line-height: 21px;
+}
+
+/*award-hero-banner*/
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.skill-text {
+  padding: 7rem 6rem;
+}
+
+.skill-text h1:before {
+  content: "";
+  position: absolute;
+  width: 10rem;
+  height: 1px;
+  background-color: white;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.skills_content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 7rem;
+  padding-bottom: 7rem;
+}
+
+.skills_content h2 {
+  border: 0.5px solid rgba(255, 255, 255, 0.205);
+  font-size: 18px;
+  border-radius: 5px;
+  padding: 1rem 1rem;
+}
+
+.technical-hero-banner {
+  background-image: url(images/projects.jpg);
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+@media only screen and (max-width: 792px) {
+  .hero-text h1 {
+    font-size: 30px !important;
+  }
+
+  .skill-text h1 {
+    font-size: 18px;
+  }
+
+  .skills_content {
+    padding: 0 1rem;
+  }
+
+  .skills_content h2 {
+    font-size: 16px;
+    padding: 1rem;
+  }
+  .skills{
+    margin-bottom:2rem;
+  }
+
+  .skills_content h2{
+    font-size: 1rem !important;
+  }
+}

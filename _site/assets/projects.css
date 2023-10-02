@@ -1,0 +1,150 @@
+body {
+  background-color: black;
+}
+
+.main-content {
+  background-color: black;
+}
+
+p {
+  color: #b6babf;
+}
+
+.main-content {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  position: relative;
+  margin-top: 0.5rem;
+}
+
+h2 {
+  color: #b6babf;
+  font-size: 25px;
+  font-weight: 500px;
+  line-height: 30px;
+  padding-top: 1rem;
+}
+
+h3 {
+  color: #a8a8a8;
+  font-size: 16px;
+  font-weight: 500px;
+  line-height: 21px;
+}
+
+h4 {
+  color: #a8a8a8;
+  font-size: 16px;
+  font-weight: 500px;
+  line-height: 9px;
+}
+
+h5 {
+  color: #a8a8a8;
+  font-size: 16px;
+  font-weight: 500px;
+}
+/*award-hero-banner*/
+
+.project-hero-banner {
+  background-image: url(images/projects.jpg);
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.project-text {
+  padding: 7rem 6rem;
+}
+
+.project-text h1:before {
+  content: "";
+  position: absolute;
+  width: 10rem;
+  height: 1px;
+  background-color: white;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.projects_content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 7rem;
+ 
+}
+
+.projects_content ul {
+  padding-left: 1rem;
+}
+.projects_content li {
+  list-style-type: disc;
+  line-height:3rem;
+}
+
+.projects {
+  border: 0.5px solid rgba(255, 255, 255, 0.205);
+  padding: 3rem;
+  border-radius: 5px;
+}
+
+.projects h3 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: white;
+}
+.projects h2 {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+.projects li {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.808);
+}
+.project-text h1 {
+  font-size: 3rem;
+}
+@media only screen and (max-width: 792px) {
+  .hero-text h1 {
+    font-size: 30px !important;
+  }
+
+  .project-text h1 {
+    font-size: 18px;
+  }
+  .projects_content{
+    padding-bottom:2rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+ 
+
+  .projects_content li{
+    font-size: 1rem !important;
+    line-height:2rem !important;
+  }
+
+  .projects_content li:last-child{
+    padding-top:1rem;
+  }
+   
+ 
+}
