@@ -1,3 +1,32 @@
+const myImage = document.getElementById("myImage");
+let count_index = 0;
+let images = []; // Initialize an empty array for the images
+
+// Fetch the images from Netlify CMS
+fetch('/admin/api/collections/get/sliderImages')
+  .then((response) => response.json())
+  .then((data) => {
+    // Extract image URLs and populate the images array
+    images = data.entries.map((entry) => entry.image);
+  })
+  .catch((error) => console.error('Error fetching images:', error));
+
+function fadeIn() {
+  // ... Your existing fadeIn function
+}
+
+function fadeOut() {
+  // ... Your existing fadeOut function
+}
+
+function image_change() {
+  fadeOut();
+  setTimeout(image_change, 5000);
+}
+
+// Start the image_change function
+image_change();
+/*
 var Image = [
   "assets/images/IMG_1.jpg",
   "assets/images/IMG_4.jpg",
@@ -47,7 +76,7 @@ function image_change() {
 }
 
 window.onload = image_change();
-
+*/
 //copyright year
 const currentYear = new Date().getFullYear();
 console.log(currentYear);
