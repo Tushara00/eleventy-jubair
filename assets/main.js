@@ -12,11 +12,36 @@ fetch('/admin/api/collections/get/sliderImages')
   .catch((error) => console.error('Error fetching images:', error));
 
 function fadeIn() {
-  // ... Your existing fadeIn function
+  var opacity = 0.5;
+  myImage.style.opacity = opacity;
+
+  var fadeInInterval = setInterval(function () {
+    if (opacity >= 1) {
+      clearInterval(fadeInInterval);
+    } else {
+      opacity += 0.01;
+      myImage.style.opacity = opacity;
+    }
+  }, 10);
 }
 
 function fadeOut() {
-  // ... Your existing fadeOut function
+  var opacity = 1;
+
+  var fadeOutInterval = setInterval(function () {
+    if (opacity <= 0) {
+      clearInterval(fadeOutInterval);
+      myImage.src = Image[count_index];
+      fadeIn();
+      count_index++;
+      if (count_index >= Image.length) {
+        count_index = 0;
+      }
+    } else {
+      opacity -= 0.05;
+      myImage.style.opacity = opacity;
+    }
+  }, 10); // Adjust the interval
 }
 
 function image_change() {
